@@ -1,0 +1,13 @@
+﻿From: sender@example.com
+To: you@example.com
+Subject: Special offer just for you
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+You have been selected for a limited-time offer. Click the link below to claim your prize:
+http://example.com/claim
+
+Best regards,
+Promotions Team

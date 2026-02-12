@@ -1,0 +1,8 @@
+﻿From: promo@rewards.example
+To: you@example.com
+Subject: You won a prize!
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Congratulations! You have been selected for a limited-time reward.
+Click here to claim now: http://example.com/claim

@@ -1,0 +1,26 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Environments
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Hugging Face cache
+.hf_cache/
+
+# Datasets and outputs
+data/
+spmEN.model/
+globalSpm.model/
+spam_llm_model/
+
+# OS
+.DS_Store
+Thumbs.db
