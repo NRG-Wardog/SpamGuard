@@ -18,3 +18,5 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+globalSpm.model/
+spmEN.model/
