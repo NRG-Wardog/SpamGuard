@@ -20,3 +20,8 @@ __pycache__/
 Thumbs.db
 globalSpm.model/
 spmEN.model/
+# Training artifacts (do not commit)
+**/checkpoint-*/
+**/optimizer.pt
+**/scheduler.pt
+**/rng_state.pth
