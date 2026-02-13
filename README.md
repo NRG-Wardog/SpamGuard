@@ -1,34 +1,44 @@
-﻿# LLM Spam Classifier
+﻿# SpamGuard - Transformer Email Spam Classifier
 
-Notebook project for training a spam/ham email classifier with Transformers and running EML-based tests.
+Notebook project for training English and multilingual spam/ham classifiers with Transformer encoders and validating predictions from `.eml` files.
+
+## What This Project Does
+- Trains a Transformer text classifier for spam detection (`HAM=0`, `SPAM=1`)
+- Supports an English model and a multilingual model
+- Parses real `.eml` files and runs inference
+- Shows evaluation metrics and graphs (confusion matrix, ROC, PR, learning curves)
 
 ## Project Structure
-- `LLM_Spam.ipynb` Notebook pipeline (setup, data loading, training, evaluation, inference)
-- `test/` Sample .eml files for quick validation
-- `spmEN.model/` Trained English model output (DeBERTa)
-- `globalSpm.model/` Trained multilingual model output (XLM-R)
-- `.hf_cache/` Hugging Face cache (ASCII-safe path)
-- `data/` Downloaded datasets (not committed)
+- `SpamGuard_Transformer_Email_Spam_Classifier.ipynb`: End-to-end notebook pipeline
+- `test/`: Example `.eml` files for inference tests
+- `spmEN.model/`: English model output
+- `globalSpm.model/`: Multilingual model output
+- `.hf_cache/`: Hugging Face cache (ASCII-safe path for Windows)
+- `data/`: Downloaded datasets (not committed)
 
 ## Quick Start
-1. Open `LLM_Spam.ipynb`.
-2. Run the notebook from top to bottom.
-3. If you trained previously:
-   - English model output is saved in `spmEN.model/`.
-   - Multilingual model output is saved in `globalSpm.model/`.
+1. Open `SpamGuard_Transformer_Email_Spam_Classifier.ipynb`.
+2. Run cells top-to-bottom.
+3. Train and save models:
+- English output directory: `spmEN.model/`
+- Multilingual output directory: `globalSpm.model/`
 
-## EML Tests
-The notebook includes an EML parsing helper and a test cell that runs these files:
+## EML Test Files
 - `test/spam_en.eml`
 - `test/spam_he.eml`
 - `test/ham_en.eml`
 - `test/ham_he.eml`
 
 ## Notes
-- Hebrew and other non-English messages are less accurate with English-only training.
-- For multilingual support, use `MODEL_NAME = "xlm-roberta-base"` and re-train.
-- The Hugging Face cache is redirected to `./.hf_cache` to avoid non-ASCII Windows path issues.
+- English-only training performs worse on Hebrew or other languages.
+- For multilingual support, use `MODEL_NAME = "xlm-roberta-base"` and train again.
+- Cache path is redirected to `./.hf_cache` to avoid non-ASCII Windows path issues.
 
-## Outputs
-- Model artifacts are saved to the folder in `cfg.OUTPUT_DIR`.
-- Metrics (accuracy, precision, recall, F1, ROC-AUC) are printed during training.
+## Output Metrics
+The notebook reports:
+- Accuracy
+- Precision
+- Recall
+- F1
+- ROC-AUC
+
