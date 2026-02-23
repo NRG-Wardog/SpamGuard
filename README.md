@@ -89,7 +89,6 @@ Controls:
 ---
 
 ## Sample Results (notebook run R1)
-These PNGs were exported directly from the notebook cells. Replace them with your own run outputs as you iterate.
 
 <div align="center">
   <img src="docs/images/image.png" alt="R1 training curves/metrics" width="720">
@@ -109,8 +108,6 @@ These PNGs were exported directly from the notebook cells. Replace them with you
 <div align="center">
   <img src="docs/images/{AEA886DD-08C7-47A9-8759-3073BDCEE489}.png" alt="R1 additional plot" width="720">
 </div>
-
-To regenerate: rerun the evaluation/plotting cells in the notebook and save figures to `docs/images/` (for example, `plt.savefig('docs/images/run1_confusion.png', dpi=180, bbox_inches='tight')`).
 
 ---
 
