@@ -26,3 +26,11 @@ spmEN.model/
 **/scheduler.pt
 **/rng_state.pth
 data/
+
+# model artifacts
+globalSpm.model/
+spmEN.model/
+*.safetensors
+*.pt
+*.bin
+**/checkpoint-*/
