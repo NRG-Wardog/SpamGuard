@@ -128,5 +128,5 @@ The repository does not redistribute raw corpora. You are responsible for:
 ---
 
 ## License and Disclaimer
-- Add an explicit code license (for example, MIT) before publishing.
+- Code is released under the MIT License (see `LICENSE`).
 - Educational/research use only. Do not process real user mail without proper authorization and compliance review.
