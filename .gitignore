@@ -25,3 +25,4 @@ spmEN.model/
 **/optimizer.pt
 **/scheduler.pt
 **/rng_state.pth
+data/
