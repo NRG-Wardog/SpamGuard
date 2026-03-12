@@ -8,12 +8,17 @@ __pycache__/
 
 # Environments
 .venv/
+.env
+credentials.json
 
 # Jupyter
 .ipynb_checkpoints/
 
 # Hugging Face cache
 .hf_cache/
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+.streamlit/gmail_token.json
 
 # OS
 .DS_Store
@@ -34,3 +39,7 @@ spmEN.model/
 *.pt
 *.bin
 **/checkpoint-*/
+
+# Demo mailboxes and classification outputs
+test/mails/
+test/result/
