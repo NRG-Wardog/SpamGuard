@@ -20,6 +20,10 @@ from spamguard_demo import (
     seed_demo_mailbox,
 )
 
+# TEXT stores all UI labels/messages for the app in Hebrew and English.
+# The Hebrew strings may appear as Unicode escape sequences (\u05d...),
+# but Python decodes them automatically at runtime and displays normal Hebrew text.
+# This structure allows the UI to switch language by selecting TEXT["he"] or TEXT["en"].
 LANGS = {"he": "\u05e2\u05d1\u05e8\u05d9\u05ea", "en": "English"}
 RTL_LANGS = {"he"}
 TEXT = {
