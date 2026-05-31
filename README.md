@@ -33,8 +33,26 @@ SpamGuard fine-tunes a Transformer encoder to label emails as **SPAM (1)** or **
 Requirements: Python **3.10+**; GPU optional (the notebook auto-detects CUDA and can run on CPU).
 
 1) Create a virtual environment (recommended):
-   - Windows: `python -m venv .venv && .\\.venv\\Scripts\\activate`
-   - macOS/Linux: `python -m venv .venv && source .venv/bin/activate`
+   - Windows PowerShell:
+     ```powershell
+     py -0p
+     py -3.10 -m venv .venv
+     .\.venv\Scripts\Activate.ps1
+     ```
+     If `py -3.10` says no suitable runtime was found, install Python 3.10+ first:
+     ```powershell
+     winget install -e --id Python.Python.3.11
+     ```
+     If PowerShell blocks activation for the current window, run:
+     ```powershell
+     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+     .\.venv\Scripts\Activate.ps1
+     ```
+   - macOS/Linux:
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
 2) Upgrade pip: `python -m pip install --upgrade pip`
 3) Dependencies: the notebook can auto-install pinned versions (`CFG.INSTALL_DEPS=True`).  
    If you prefer preinstalling, use:
@@ -47,7 +65,7 @@ Requirements: Python **3.10+**; GPU optional (the notebook auto-detects CUDA and
    ```bash
    pip install -r requirements-demo.txt
    ```
-   This installs `streamlit`, `google-api-python-client`, `google-auth-httplib2`, and `google-auth-oauthlib`.
+   This installs the demo runtime: PyTorch, Transformers, Streamlit, pandas, SentencePiece, and Gmail OAuth/API packages.
 
 ---
 
@@ -133,6 +151,10 @@ The repository now includes a presentation-oriented demo layer that sits on top 
    pip install -r requirements-demo.txt
    ```
 3) Enable the **Gmail API** in Google Cloud Console and create an **OAuth Desktop App** client.
+   - Google guide: https://developers.google.com/workspace/guides/create-credentials?hl=he
+   - Use **OAuth client ID**, not an API key or service account, because this app asks a user to approve read-only Gmail access.
+   - In Google Auth Platform / Clients, choose **Create Client** -> **Desktop app**.
+   - If the app is in testing mode, add your Gmail address as a test user on the OAuth consent screen.
 4) Download the OAuth client file and place it at:
    ```text
    credentials.json
