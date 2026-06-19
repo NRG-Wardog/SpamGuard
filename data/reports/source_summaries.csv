@@ -1,0 +1,10 @@
+source_name,processed_path,rows,allowed_use,license_status
+spamassassin,data\processed\spamassassin\spamassassin.jsonl,6035,"{""evaluation"": true, ""research_only"": false, ""training"": true}",public_corpus_sender_copyright_do_not_use_live_system
+csdmc2010,data\processed\csdmc2010\csdmc2010.jsonl,4325,"{""evaluation"": true, ""research_only"": true, ""training"": false}",conditional_underlying_competition_terms_need_review
+uci_sms,data\processed\uci_sms\uci_sms.jsonl,5574,"{""evaluation"": true, ""research_only"": false, ""training"": true}",CC_BY_4_0
+hebrew_eval,data\processed\hebrew_eval\hebrew_eval.jsonl,200,"{""evaluation"": true, ""research_only"": false, ""training"": false}",local_synthetic_manual_eval_only
+enron_manual,data\processed\enron_manual\enron_manual.jsonl,0,"{""evaluation"": true, ""research_only"": true, ""training"": false}",public_record_privacy_review_required
+trec_manual,data\processed\trec_manual\trec_manual.jsonl,0,"{""evaluation"": false, ""research_only"": true, ""training"": false}",agreement_required
+dcinbox_manual,data\processed\dcinbox_manual\dcinbox_manual.jsonl,0,"{""evaluation"": true, ""research_only"": true, ""training"": false}",terms_need_review
+avocado_manual,data\processed\avocado_manual\avocado_manual.jsonl,0,"{""evaluation"": false, ""research_only"": true, ""training"": false}",LDC_license_required
+sms_phishing_manual,data\processed\sms_phishing_manual\sms_phishing_manual.jsonl,0,"{""evaluation"": true, ""research_only"": true, ""training"": false}",license_needs_review

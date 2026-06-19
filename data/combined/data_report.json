@@ -1,0 +1,149 @@
+{
+  "auxiliary_evaluation_only_summary": {
+    "hard_ham": 2517,
+    "labels": {
+      "HAM": 2688,
+      "SPAM": 1322
+    },
+    "languages": {
+      "english_or_latin": 4010
+    },
+    "links": 2818,
+    "phones": 1669,
+    "rows": 4010,
+    "sources": {
+      "csdmc2010": 4010
+    }
+  },
+  "do_not_train_yet": true,
+  "evaluation_candidate_inputs": {
+    "input_rows": 16134,
+    "removed_exact_duplicates": 999,
+    "repeated_template_clusters": 152,
+    "rows_after_exact_dedup": 15135,
+    "rows_in_repeated_template_clusters": 351,
+    "template_clusters": 14936
+  },
+  "hebrew_eval_summary": {
+    "hard_ham": 100,
+    "labels": {
+      "HAM": 100,
+      "SPAM": 100
+    },
+    "languages": {
+      "hebrew": 178,
+      "hebrew_multilingual": 22
+    },
+    "links": 20,
+    "phones": 21,
+    "rows": 200,
+    "sources": {
+      "hebrew_eval": 200
+    }
+  },
+  "recommendation": "Review manifest/license flags and quality report before enabling any conditional source for training.",
+  "skipped_evaluation_sources": [
+    {
+      "reason": "allow_evaluation_false",
+      "source_name": "trec_manual"
+    },
+    {
+      "reason": "allow_evaluation_false",
+      "source_name": "avocado_manual"
+    }
+  ],
+  "skipped_training_sources": [
+    {
+      "reason": "allow_training_false",
+      "source_name": "csdmc2010"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "hebrew_eval"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "enron_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "trec_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "dcinbox_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "avocado_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "sms_phishing_manual"
+    }
+  ],
+  "split_policy": "Exact duplicate removal, then template-hash clusters split as whole clusters. Synthetic Hebrew remains separate evaluation-only.",
+  "split_summary": {
+    "test": {
+      "hard_ham": 1098,
+      "labels": {
+        "HAM": 1290,
+        "SPAM": 347
+      },
+      "languages": {
+        "english_or_latin": 1637
+      },
+      "links": 677,
+      "phones": 405,
+      "rows": 1637,
+      "sources": {
+        "spamassassin": 863,
+        "uci_sms": 774
+      }
+    },
+    "train": {
+      "hard_ham": 5236,
+      "labels": {
+        "HAM": 6046,
+        "SPAM": 1600
+      },
+      "languages": {
+        "english_or_latin": 7644,
+        "multilingual_or_other": 2
+      },
+      "links": 3206,
+      "phones": 1855,
+      "rows": 7646,
+      "sources": {
+        "spamassassin": 4037,
+        "uci_sms": 3609
+      }
+    },
+    "validation": {
+      "hard_ham": 1130,
+      "labels": {
+        "HAM": 1295,
+        "SPAM": 347
+      },
+      "languages": {
+        "english_or_latin": 1639,
+        "multilingual_or_other": 3
+      },
+      "links": 672,
+      "phones": 379,
+      "rows": 1642,
+      "sources": {
+        "spamassassin": 866,
+        "uci_sms": 776
+      }
+    }
+  },
+  "training_candidate_inputs": {
+    "input_rows": 11609,
+    "removed_exact_duplicates": 684,
+    "repeated_template_clusters": 110,
+    "rows_after_exact_dedup": 10925,
+    "rows_in_repeated_template_clusters": 262,
+    "template_clusters": 10773
+  }
+}

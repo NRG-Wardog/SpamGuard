@@ -1,0 +1,327 @@
+{
+  "notes": "Central SpamGuard dataset manifest. Training flags are conservative until license review is complete.",
+  "sources": [
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": false,
+        "training": true
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "SpamAssassin Public Corpus",
+      "download_method": "Local archives already present; public Apache mirror supports direct archive download.",
+      "known_risks": [
+        "old data",
+        "sender copyright ambiguity",
+        "newsletter/list bias",
+        "template duplicates"
+      ],
+      "label_mapping": {
+        "easy_ham": "HAM",
+        "easy_ham_2": "HAM",
+        "hard_ham": "HAM",
+        "spam": "SPAM",
+        "spam_2": "SPAM"
+      },
+      "license_status": "public_corpus_sender_copyright_do_not_use_live_system",
+      "local_raw_path": "data\\raw\\spamassassin",
+      "notes": "Hard-ham is especially useful for false-positive reduction. Do not inject these messages into live email systems.",
+      "parser_name": "spamassassin_email_dirs",
+      "processed_path": "data\\processed\\spamassassin\\spamassassin.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 3877,
+        "labels": {
+          "HAM": 4153,
+          "SPAM": 1882
+        },
+        "languages": {
+          "english_or_latin": 6031,
+          "multilingual_or_other": 4
+        },
+        "total": 6035
+      },
+      "source_name": "spamassassin",
+      "source_url": "https://spamassassin.apache.org/old/publiccorpus/readme.html"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "CSDMC2010 formatted local corpus",
+      "download_method": "Local ZIPs already present in this project.",
+      "known_risks": [
+        "underlying corpus rights unclear",
+        "HTML artifacts",
+        "template duplicates",
+        "unlabeled original test set not used"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "spam": "SPAM"
+      },
+      "license_status": "conditional_underlying_competition_terms_need_review",
+      "local_raw_path": "data\\raw\\csdmc2010",
+      "notes": "Keep evaluation/research-only until the original CSDMC terms are accepted.",
+      "parser_name": "csdmc_email_dirs",
+      "processed_path": "data\\processed\\csdmc2010\\csdmc2010.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 2743,
+        "labels": {
+          "HAM": 2949,
+          "SPAM": 1376
+        },
+        "languages": {
+          "english_or_latin": 4325
+        },
+        "total": 4325
+      },
+      "source_name": "csdmc2010",
+      "source_url": "https://github.com/zrz1996/Spam-Email-Classifier-DataSet"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": false,
+        "training": true
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "UCI SMS Spam Collection",
+      "download_method": "Direct download from https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+      "known_risks": [
+        "SMS domain differs from email",
+        "short-message sampling bias",
+        "possible duplicate templates"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "spam": "SPAM"
+      },
+      "license_status": "CC_BY_4_0",
+      "local_raw_path": "data\\raw\\uci_sms",
+      "notes": "Use as auxiliary data for short-message robustness, not as a replacement for email hard-HAM.",
+      "parser_name": "uci_sms_tsv",
+      "processed_path": "data\\processed\\uci_sms\\uci_sms.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 3847,
+        "labels": {
+          "HAM": 4827,
+          "SPAM": 747
+        },
+        "languages": {
+          "english_or_latin": 5571,
+          "multilingual_or_other": 3
+        },
+        "total": 5574
+      },
+      "source_name": "uci_sms",
+      "source_url": "https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": false,
+        "training": false
+      },
+      "dedup_status": "deduplicated_by_generation_script",
+      "display_name": "Synthetic/manual Hebrew evaluation probe",
+      "download_method": "Generated locally by previous data-building pass.",
+      "known_risks": [
+        "synthetic/manual probes",
+        "needs native-speaker audit",
+        "not representative enough for training"
+      ],
+      "label_mapping": {
+        "HAM": "HAM",
+        "SPAM": "SPAM"
+      },
+      "license_status": "local_synthetic_manual_eval_only",
+      "local_raw_path": "data\\raw\\hebrew_eval",
+      "notes": "Do not mix into training automatically.",
+      "parser_name": "hebrew_probe_csv",
+      "processed_path": "data\\processed\\hebrew_eval\\hebrew_eval.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 100,
+        "labels": {
+          "HAM": 100,
+          "SPAM": 100
+        },
+        "languages": {
+          "hebrew": 178,
+          "hebrew_multilingual": 22
+        },
+        "total": 200
+      },
+      "source_name": "hebrew_eval",
+      "source_url": "local:analysis_outputs/data_building/hebrew_eval_200_synthetic_probe.csv"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "Enron / Enron-Spam manual ingest",
+      "download_method": "Manual or optional large download; place maildir/CSV/mbox files under data/raw/enron_manual/.",
+      "known_risks": [
+        "privacy/ethics concerns",
+        "very stale corporate data",
+        "large duplicates",
+        "threads and templates"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "spam": "SPAM"
+      },
+      "license_status": "public_record_privacy_review_required",
+      "local_raw_path": "data\\raw\\enron_manual",
+      "notes": "Enable training only after privacy/license review and strict deduplication.",
+      "parser_name": "manual_folder",
+      "processed_path": "data\\processed\\enron_manual\\enron_manual.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 0,
+        "labels": {},
+        "languages": {},
+        "total": 0
+      },
+      "source_name": "enron_manual",
+      "source_url": "https://www.cs.cmu.edu/~enron/ and https://www2.aueb.gr/users/ion/data/enron-spam/"
+    },
+    {
+      "allowed_use": {
+        "evaluation": false,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "TREC Spam Corpora manual ingest",
+      "download_method": "Manual download after reviewing/accepting corpus terms; place extracted corpus under data/raw/trec_manual/.",
+      "known_risks": [
+        "agreement/access ambiguity",
+        "campaign duplicates",
+        "chronological leakage if split incorrectly"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "spam": "SPAM"
+      },
+      "license_status": "agreement_required",
+      "local_raw_path": "data\\raw\\trec_manual",
+      "notes": "Do not auto-download or train until agreement is accepted.",
+      "parser_name": "trec_folder",
+      "processed_path": "data\\processed\\trec_manual\\trec_manual.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 0,
+        "labels": {},
+        "languages": {},
+        "total": 0
+      },
+      "source_name": "trec_manual",
+      "source_url": "https://trec.nist.gov/data/spam.html"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "DCinbox newsletter-style HAM manual ingest",
+      "download_method": "Manual export/download if usage terms permit; place CSV files under data/raw/dcinbox_manual/.",
+      "known_risks": [
+        "political/newsletter domain bias",
+        "high template repetition",
+        "terms unclear"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "newsletter": "HAM"
+      },
+      "license_status": "terms_need_review",
+      "local_raw_path": "data\\raw\\dcinbox_manual",
+      "notes": "Useful for hard-HAM evaluation/mining if license allows.",
+      "parser_name": "newsletter_csv",
+      "processed_path": "data\\processed\\dcinbox_manual\\dcinbox_manual.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 0,
+        "labels": {},
+        "languages": {},
+        "total": 0
+      },
+      "source_name": "dcinbox_manual",
+      "source_url": "https://www.dcinbox.com/"
+    },
+    {
+      "allowed_use": {
+        "evaluation": false,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "Avocado Research Email Collection",
+      "download_method": "Manual LDC licensed download only; place approved files under data/raw/avocado_manual/.",
+      "known_risks": [
+        "license required",
+        "no redistribution",
+        "privacy sensitivity",
+        "possible malware/attachments",
+        "thread duplicates"
+      ],
+      "label_mapping": {
+        "email": "HAM"
+      },
+      "license_status": "LDC_license_required",
+      "local_raw_path": "data\\raw\\avocado_manual",
+      "notes": "Excellent business/system HAM candidate after LDC approval.",
+      "parser_name": "manual_folder",
+      "processed_path": "data\\processed\\avocado_manual\\avocado_manual.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 0,
+        "labels": {},
+        "languages": {},
+        "total": 0
+      },
+      "source_name": "avocado_manual",
+      "source_url": "https://catalog.ldc.upenn.edu/LDC2015T03"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "dedup_status": "not_deduplicated",
+      "display_name": "SMS Phishing Dataset for ML and Pattern Recognition",
+      "download_method": "Manual Mendeley download after verifying page license; place CSV/XLSX under data/raw/sms_phishing_manual/.",
+      "known_risks": [
+        "SMS domain mismatch",
+        "license must be confirmed",
+        "duplicate templates",
+        "label noise"
+      ],
+      "label_mapping": {
+        "ham": "HAM",
+        "legitimate": "HAM",
+        "smishing": "PHISHING",
+        "spam": "SPAM"
+      },
+      "license_status": "license_needs_review",
+      "local_raw_path": "data\\raw\\sms_phishing_manual",
+      "notes": "Auxiliary short-message and phishing robustness source after license check.",
+      "parser_name": "generic_sms_csv",
+      "processed_path": "data\\processed\\sms_phishing_manual\\sms_phishing_manual.jsonl",
+      "sample_counts": {
+        "hard_ham_heuristic": 0,
+        "labels": {},
+        "languages": {},
+        "total": 0
+      },
+      "source_name": "sms_phishing_manual",
+      "source_url": "https://data.mendeley.com/datasets/f45bkkt8pr/1"
+    }
+  ],
+  "version": 1
+}

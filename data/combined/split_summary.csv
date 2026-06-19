@@ -1,0 +1,4 @@
+split,rows,labels,sources,languages,hard_ham,links,phones
+train,7646,"{""HAM"": 6046, ""SPAM"": 1600}","{""spamassassin"": 4037, ""uci_sms"": 3609}","{""english_or_latin"": 7644, ""multilingual_or_other"": 2}",5236,3206,1855
+validation,1642,"{""HAM"": 1295, ""SPAM"": 347}","{""spamassassin"": 866, ""uci_sms"": 776}","{""english_or_latin"": 1639, ""multilingual_or_other"": 3}",1130,672,379
+test,1637,"{""HAM"": 1290, ""SPAM"": 347}","{""spamassassin"": 863, ""uci_sms"": 774}","{""english_or_latin"": 1637}",1098,677,405

@@ -30,7 +30,25 @@ spmEN.model/
 **/optimizer.pt
 **/scheduler.pt
 **/rng_state.pth
-data/
+# Data ingestion artifacts
+# Keep raw/licensed/generated message corpora out of git by default.
+data/raw/**
+data/processed/**
+data/combined/**
+data/spamassassin_corpus/**
+data/csdmc2010/**
+
+# Safe metadata, summary reports, and manual placeholders only.
+!data/dataset_manifest.json
+!data/reports/
+!data/reports/*.json
+!data/reports/*.csv
+!data/raw/
+!data/raw/*_manual/
+!data/raw/*_manual/README.md
+!data/combined/
+!data/combined/data_report.json
+!data/combined/split_summary.csv
 
 # model artifacts
 globalSpm.model/
