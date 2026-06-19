@@ -14,6 +14,9 @@ credentials.json
 # Jupyter
 .ipynb_checkpoints/
 
+# Local analysis and generated diagnostics
+analysis_outputs/
+
 # Hugging Face cache
 .hf_cache/
 .streamlit/secrets.toml
@@ -53,6 +56,7 @@ data/csdmc2010/**
 # model artifacts
 globalSpm.model/
 spmEN.model/
+*.rar
 *.safetensors
 *.pt
 *.bin
@@ -61,3 +65,6 @@ spmEN.model/
 # Demo mailboxes and classification outputs
 test/mails/
 test/result/
+
+# Office temporary files
+~$*
