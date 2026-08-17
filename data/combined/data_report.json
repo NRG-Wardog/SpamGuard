@@ -1,0 +1,174 @@
+{
+  "auxiliary_evaluation_only_summary": {
+    "hard_ham": 2517,
+    "labels": {
+      "HAM": 2688,
+      "SPAM": 1322
+    },
+    "languages": {
+      "english_or_latin": 4010
+    },
+    "links": 2818,
+    "phones": 1669,
+    "rows": 4010,
+    "sources": {
+      "csdmc2010": 4010
+    }
+  },
+  "do_not_train_yet": true,
+  "evaluation_candidate_inputs": {
+    "conflicting_label_examples": [],
+    "conflicting_label_groups": 0,
+    "conflicting_label_rows_excluded": 0,
+    "input_rows": 16134,
+    "removed_exact_duplicates": 999,
+    "repeated_template_clusters": 152,
+    "rows_after_exact_dedup": 15135,
+    "rows_in_repeated_template_clusters": 351,
+    "template_clusters": 14936
+  },
+  "hebrew_eval_summary": {
+    "hard_ham": 100,
+    "labels": {
+      "HAM": 100,
+      "SPAM": 100
+    },
+    "languages": {
+      "hebrew": 178,
+      "hebrew_multilingual": 22
+    },
+    "links": 20,
+    "phones": 21,
+    "rows": 200,
+    "sources": {
+      "hebrew_eval": 200
+    }
+  },
+  "leakage_check": {
+    "pairwise": {
+      "train_vs_test": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      },
+      "train_vs_validation": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      },
+      "validation_vs_test": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      }
+    },
+    "passed": true
+  },
+  "recommendation": "Review manifest/license flags and quality report before enabling any conditional source for training.",
+  "skipped_evaluation_sources": [
+    {
+      "reason": "allow_evaluation_false",
+      "source_name": "trec_manual"
+    },
+    {
+      "reason": "allow_evaluation_false",
+      "source_name": "avocado_manual"
+    }
+  ],
+  "skipped_training_sources": [
+    {
+      "reason": "allow_training_false",
+      "source_name": "spamassassin"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "csdmc2010"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "hebrew_eval"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "enron_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "trec_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "dcinbox_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "avocado_manual"
+    },
+    {
+      "reason": "allow_training_false",
+      "source_name": "sms_phishing_manual"
+    }
+  ],
+  "split_policy": "Exact duplicate removal, then template-hash clusters split as whole clusters. Synthetic Hebrew remains separate evaluation-only.",
+  "split_seed": 20260619,
+  "split_summary": {
+    "test": {
+      "hard_ham": 543,
+      "labels": {
+        "HAM": 677,
+        "SPAM": 100
+      },
+      "languages": {
+        "english_or_latin": 776,
+        "multilingual_or_other": 1
+      },
+      "links": 14,
+      "phones": 60,
+      "rows": 777,
+      "sources": {
+        "uci_sms": 777
+      }
+    },
+    "train": {
+      "hard_ham": 2545,
+      "labels": {
+        "HAM": 3163,
+        "SPAM": 449
+      },
+      "languages": {
+        "english_or_latin": 3610,
+        "multilingual_or_other": 2
+      },
+      "links": 70,
+      "phones": 279,
+      "rows": 3612,
+      "sources": {
+        "uci_sms": 3612
+      }
+    },
+    "validation": {
+      "hard_ham": 538,
+      "labels": {
+        "HAM": 677,
+        "SPAM": 93
+      },
+      "languages": {
+        "english_or_latin": 770
+      },
+      "links": 10,
+      "phones": 49,
+      "rows": 770,
+      "sources": {
+        "uci_sms": 770
+      }
+    }
+  },
+  "training_candidate_inputs": {
+    "conflicting_label_examples": [],
+    "conflicting_label_groups": 0,
+    "conflicting_label_rows_excluded": 0,
+    "input_rows": 5574,
+    "removed_exact_duplicates": 415,
+    "repeated_template_clusters": 16,
+    "rows_after_exact_dedup": 5159,
+    "rows_in_repeated_template_clusters": 37,
+    "template_clusters": 5138
+  }
+}

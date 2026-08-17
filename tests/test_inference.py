@@ -15,6 +15,14 @@ from spamguard_demo.inference import (
 )
 
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+MODEL_DIR = REPO_ROOT / "globalSpm.model"
+MODEL_REQUIRED = unittest.skipUnless(
+    MODEL_DIR.is_dir(),
+    "globalSpm.model is a gitignored runtime artifact; model-dependent smoke test skipped",
+)
+
+
 class InferenceSmokeTests(unittest.TestCase):
     def setUp(self) -> None:
         self.repo_root = Path(__file__).resolve().parents[1]
@@ -28,6 +36,7 @@ class InferenceSmokeTests(unittest.TestCase):
         self.assertIn("Subject: סיכום פגישה", parsed_text)
         self.assertEqual(metadata["from"], "Alex@example.com")
 
+    @MODEL_REQUIRED
     def test_predict_eml_file_smoke_samples(self) -> None:
         expected_predictions = {
             "spam_en.eml": "SPAM",
@@ -64,6 +73,7 @@ class BatchClassificationTests(unittest.TestCase):
     def tearDown(self) -> None:
         shutil.rmtree(self.temp_dir, ignore_errors=True)
 
+    @MODEL_REQUIRED
     def test_classify_mail_folder_copies_inputs_and_writes_manifest(self) -> None:
         input_dir = self.temp_dir / "mails"
         output_dir = self.temp_dir / "result"

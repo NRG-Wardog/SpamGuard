@@ -1,0 +1,1298 @@
+{
+  "conflicting_label_examples": [],
+  "conflicting_label_groups": 0,
+  "conflicting_label_rows": 0,
+  "duplicate_examples": [
+    {
+      "duplicate_row": 317,
+      "duplicate_source": "spamassassin",
+      "first_row": 316,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 318,
+      "duplicate_source": "spamassassin",
+      "first_row": 316,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 460,
+      "duplicate_source": "spamassassin",
+      "first_row": 454,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 787,
+      "duplicate_source": "spamassassin",
+      "first_row": 786,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 1842,
+      "duplicate_source": "spamassassin",
+      "first_row": 1841,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 1849,
+      "duplicate_source": "spamassassin",
+      "first_row": 1829,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2048,
+      "duplicate_source": "spamassassin",
+      "first_row": 2033,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2050,
+      "duplicate_source": "spamassassin",
+      "first_row": 2034,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2051,
+      "duplicate_source": "spamassassin",
+      "first_row": 2027,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2054,
+      "duplicate_source": "spamassassin",
+      "first_row": 2032,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2068,
+      "duplicate_source": "spamassassin",
+      "first_row": 2053,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2069,
+      "duplicate_source": "spamassassin",
+      "first_row": 2027,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2071,
+      "duplicate_source": "spamassassin",
+      "first_row": 2032,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2072,
+      "duplicate_source": "spamassassin",
+      "first_row": 2037,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2076,
+      "duplicate_source": "spamassassin",
+      "first_row": 2052,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2077,
+      "duplicate_source": "spamassassin",
+      "first_row": 2033,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2080,
+      "duplicate_source": "spamassassin",
+      "first_row": 2044,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2081,
+      "duplicate_source": "spamassassin",
+      "first_row": 2045,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2082,
+      "duplicate_source": "spamassassin",
+      "first_row": 2034,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2107,
+      "duplicate_source": "spamassassin",
+      "first_row": 2053,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2126,
+      "duplicate_source": "spamassassin",
+      "first_row": 2037,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2132,
+      "duplicate_source": "spamassassin",
+      "first_row": 2032,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2138,
+      "duplicate_source": "spamassassin",
+      "first_row": 2052,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2152,
+      "duplicate_source": "spamassassin",
+      "first_row": 2027,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2159,
+      "duplicate_source": "spamassassin",
+      "first_row": 2044,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2162,
+      "duplicate_source": "spamassassin",
+      "first_row": 2045,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2164,
+      "duplicate_source": "spamassassin",
+      "first_row": 2034,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2166,
+      "duplicate_source": "spamassassin",
+      "first_row": 2033,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2516,
+      "duplicate_source": "spamassassin",
+      "first_row": 2514,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2736,
+      "duplicate_source": "spamassassin",
+      "first_row": 2713,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2743,
+      "duplicate_source": "spamassassin",
+      "first_row": 2713,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 2991,
+      "duplicate_source": "spamassassin",
+      "first_row": 2990,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3251,
+      "duplicate_source": "spamassassin",
+      "first_row": 3250,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3374,
+      "duplicate_source": "spamassassin",
+      "first_row": 3373,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3470,
+      "duplicate_source": "spamassassin",
+      "first_row": 322,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3516,
+      "duplicate_source": "spamassassin",
+      "first_row": 3515,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3517,
+      "duplicate_source": "spamassassin",
+      "first_row": 3515,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3779,
+      "duplicate_source": "spamassassin",
+      "first_row": 3778,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 3780,
+      "duplicate_source": "spamassassin",
+      "first_row": 3778,
+      "first_source": "spamassassin",
+      "label": "HAM"
+    },
+    {
+      "duplicate_row": 4165,
+      "duplicate_source": "spamassassin",
+      "first_row": 4155,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4172,
+      "duplicate_source": "spamassassin",
+      "first_row": 4154,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4178,
+      "duplicate_source": "spamassassin",
+      "first_row": 4170,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4179,
+      "duplicate_source": "spamassassin",
+      "first_row": 4155,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4184,
+      "duplicate_source": "spamassassin",
+      "first_row": 4154,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4197,
+      "duplicate_source": "spamassassin",
+      "first_row": 4155,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4209,
+      "duplicate_source": "spamassassin",
+      "first_row": 4171,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4235,
+      "duplicate_source": "spamassassin",
+      "first_row": 4167,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4246,
+      "duplicate_source": "spamassassin",
+      "first_row": 4196,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4255,
+      "duplicate_source": "spamassassin",
+      "first_row": 4206,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4256,
+      "duplicate_source": "spamassassin",
+      "first_row": 4162,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4260,
+      "duplicate_source": "spamassassin",
+      "first_row": 4171,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4273,
+      "duplicate_source": "spamassassin",
+      "first_row": 4219,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4275,
+      "duplicate_source": "spamassassin",
+      "first_row": 4196,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4276,
+      "duplicate_source": "spamassassin",
+      "first_row": 4272,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4277,
+      "duplicate_source": "spamassassin",
+      "first_row": 4180,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4309,
+      "duplicate_source": "spamassassin",
+      "first_row": 4302,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4315,
+      "duplicate_source": "spamassassin",
+      "first_row": 4280,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4321,
+      "duplicate_source": "spamassassin",
+      "first_row": 4199,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4322,
+      "duplicate_source": "spamassassin",
+      "first_row": 4171,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4323,
+      "duplicate_source": "spamassassin",
+      "first_row": 4307,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4329,
+      "duplicate_source": "spamassassin",
+      "first_row": 4206,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4334,
+      "duplicate_source": "spamassassin",
+      "first_row": 4328,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4339,
+      "duplicate_source": "spamassassin",
+      "first_row": 4253,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4355,
+      "duplicate_source": "spamassassin",
+      "first_row": 4353,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4363,
+      "duplicate_source": "spamassassin",
+      "first_row": 4177,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4366,
+      "duplicate_source": "spamassassin",
+      "first_row": 4297,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4372,
+      "duplicate_source": "spamassassin",
+      "first_row": 4177,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4402,
+      "duplicate_source": "spamassassin",
+      "first_row": 4347,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4425,
+      "duplicate_source": "spamassassin",
+      "first_row": 4253,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4442,
+      "duplicate_source": "spamassassin",
+      "first_row": 4337,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4448,
+      "duplicate_source": "spamassassin",
+      "first_row": 4447,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4462,
+      "duplicate_source": "spamassassin",
+      "first_row": 4444,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4477,
+      "duplicate_source": "spamassassin",
+      "first_row": 4476,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4478,
+      "duplicate_source": "spamassassin",
+      "first_row": 4476,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4481,
+      "duplicate_source": "spamassassin",
+      "first_row": 4384,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4483,
+      "duplicate_source": "spamassassin",
+      "first_row": 4482,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4484,
+      "duplicate_source": "spamassassin",
+      "first_row": 4482,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4485,
+      "duplicate_source": "spamassassin",
+      "first_row": 4482,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4488,
+      "duplicate_source": "spamassassin",
+      "first_row": 4444,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4507,
+      "duplicate_source": "spamassassin",
+      "first_row": 4253,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4517,
+      "duplicate_source": "spamassassin",
+      "first_row": 4506,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4518,
+      "duplicate_source": "spamassassin",
+      "first_row": 4501,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4532,
+      "duplicate_source": "spamassassin",
+      "first_row": 4506,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4540,
+      "duplicate_source": "spamassassin",
+      "first_row": 4539,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4549,
+      "duplicate_source": "spamassassin",
+      "first_row": 4257,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4558,
+      "duplicate_source": "spamassassin",
+      "first_row": 4535,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4567,
+      "duplicate_source": "spamassassin",
+      "first_row": 4545,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4574,
+      "duplicate_source": "spamassassin",
+      "first_row": 4566,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4581,
+      "duplicate_source": "spamassassin",
+      "first_row": 4521,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4588,
+      "duplicate_source": "spamassassin",
+      "first_row": 4400,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4642,
+      "duplicate_source": "spamassassin",
+      "first_row": 4641,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4655,
+      "duplicate_source": "spamassassin",
+      "first_row": 4654,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4676,
+      "duplicate_source": "spamassassin",
+      "first_row": 4675,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4687,
+      "duplicate_source": "spamassassin",
+      "first_row": 4686,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4698,
+      "duplicate_source": "spamassassin",
+      "first_row": 4697,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4714,
+      "duplicate_source": "spamassassin",
+      "first_row": 4713,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4715,
+      "duplicate_source": "spamassassin",
+      "first_row": 4711,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4716,
+      "duplicate_source": "spamassassin",
+      "first_row": 4711,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4722,
+      "duplicate_source": "spamassassin",
+      "first_row": 4711,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    },
+    {
+      "duplicate_row": 4728,
+      "duplicate_source": "spamassassin",
+      "first_row": 4727,
+      "first_source": "spamassassin",
+      "label": "SPAM"
+    }
+  ],
+  "exact_duplicate_groups": 758,
+  "exact_duplicate_rows": 999,
+  "extreme_length": {
+    "short_0_5_words": 786,
+    "very_long_2000w_plus": 180
+  },
+  "hard_ham_by_source": {
+    "csdmc2010": 2743,
+    "hebrew_eval": 100,
+    "spamassassin": 3877,
+    "uci_sms": 3847
+  },
+  "hard_ham_heuristic_count": 10567,
+  "invalid_or_unknown_label_count": 0,
+  "invalid_row_examples": [],
+  "label_distribution": {
+    "HAM": 12029,
+    "SPAM": 4105
+  },
+  "language_distribution": {
+    "english_or_latin": 15927,
+    "hebrew": 178,
+    "hebrew_multilingual": 22,
+    "multilingual_or_other": 7
+  },
+  "language_label_distribution": {
+    "english_or_latin": {
+      "HAM": 11926,
+      "SPAM": 4001
+    },
+    "hebrew": {
+      "HAM": 88,
+      "SPAM": 90
+    },
+    "hebrew_multilingual": {
+      "HAM": 12,
+      "SPAM": 10
+    },
+    "multilingual_or_other": {
+      "HAM": 3,
+      "SPAM": 4
+    }
+  },
+  "length_bucket_distribution": {
+    "0-20w": 4515,
+    "201-800w": 3194,
+    "21-80w": 3881,
+    "800w+": 634,
+    "81-200w": 3910
+  },
+  "link_coverage": {
+    "ham": 6089,
+    "spam_or_phishing": 1675,
+    "total": 7764
+  },
+  "missing_text_count": 0,
+  "phone_coverage": {
+    "ham": 3053,
+    "spam_or_phishing": 1549,
+    "total": 4602
+  },
+  "repeated_template_examples": [
+    {
+      "count": 30,
+      "template_hash": "b087ff40138da2cbc03dff409886d951059c0b2dfd9c2ac4228fd9b9a5674749"
+    },
+    {
+      "count": 12,
+      "template_hash": "0d79494545b36cc984d89cb811bf1c281c74e9a2462046accecb25332b3321a2"
+    },
+    {
+      "count": 11,
+      "template_hash": "f9555a47c2de6778c9e511509b443caed36252d437aace1fd285204cf9ac75dd"
+    },
+    {
+      "count": 10,
+      "template_hash": "a18f8a22edfdc9dc930ca0af7a16671a5e0fab673ddcf0d540ebd560e27a9821"
+    },
+    {
+      "count": 10,
+      "template_hash": "22bd868b11b1ed0f22d649bd044d5e86ca85ea5c3d242fe095e9e303310f7042"
+    },
+    {
+      "count": 9,
+      "template_hash": "3a7f10a1e40543800557899cd2631bac81f502169e2efa15321558f495d2be6d"
+    },
+    {
+      "count": 8,
+      "template_hash": "c94fa4ed88f3e799caecf6e0602388d2bc1e0a12ad022e5a7decc5633cce4b62"
+    },
+    {
+      "count": 8,
+      "template_hash": "8ecc1ee89bac2187edcfe0a0683f6654773fb87465902387a6bf0eef03ea1f78"
+    },
+    {
+      "count": 7,
+      "template_hash": "5be2bd6d5ac8b0a2ced6f6b57191de5c57522faf26f8898b73e7e9edb91422d1"
+    },
+    {
+      "count": 7,
+      "template_hash": "94f80aea24e3c13dac1649dec47f12226599963a1fa0296dc5fed2fcb8bd36df"
+    },
+    {
+      "count": 6,
+      "template_hash": "bd176589a82d2b1d88eb23ac925da9ab4ba53faee1298e6d3b21f7349b63aff7"
+    },
+    {
+      "count": 5,
+      "template_hash": "86bed7eea32a0f157392d0df84b9c9cf0f9b7d2d9ae33eb4df60bab1107dc4b8"
+    },
+    {
+      "count": 5,
+      "template_hash": "26ac25d297f148323c9159346d5f61f012074135981a05644e455008847863b1"
+    },
+    {
+      "count": 5,
+      "template_hash": "c9aa0962840d9d9a61ab170f3be0e318af37a07c03877ff6678ff0e336621a3b"
+    },
+    {
+      "count": 5,
+      "template_hash": "49d62d194a20df47d416eb6fadd327dba56fdd18baded829483e6f38a9957c81"
+    },
+    {
+      "count": 5,
+      "template_hash": "d96100d7357afd41b2479e4d1ae6aa07fd9290e2bb70b9ae25c518344d19893d"
+    },
+    {
+      "count": 5,
+      "template_hash": "d0265bd0c4f120b6db9436e1f9d60ae925ca4d1f773e71fc817d7f2f88613842"
+    },
+    {
+      "count": 4,
+      "template_hash": "beca8ca5c50a128f2cf04af324ba806e1d20fbf93e2aa946164035a73f343ca3"
+    },
+    {
+      "count": 4,
+      "template_hash": "fde639089ac885433bae3123d422187b6f200fe4cfe2729f1c3cb890445103f1"
+    },
+    {
+      "count": 4,
+      "template_hash": "d65cce0efb3f8f4cd65b965e0bb5713cb5ecd90ac849023fb96f2d09526b9254"
+    },
+    {
+      "count": 4,
+      "template_hash": "433d6451e6356b180a2dd5b1f8f09f5a4ced60966b9bf6b910ddc72b83fd25ab"
+    },
+    {
+      "count": 4,
+      "template_hash": "07428931aa7dd470083254b3ae1fda7d27a46f0e0aeb97491b6a289225a38603"
+    },
+    {
+      "count": 4,
+      "template_hash": "da53a341207909c1de70634b83e7ae67a30cf07cc1d18f98701592728b11c396"
+    },
+    {
+      "count": 4,
+      "template_hash": "68f7c2586d14567ab8327c3de2555fac7a735814421f719386893156cc1a3ce0"
+    },
+    {
+      "count": 4,
+      "template_hash": "7267a14c76799797161a39efe9932bc651227872439c6a784c3e701b4b4c2313"
+    },
+    {
+      "count": 4,
+      "template_hash": "765673f1499c42c0bfc814e018eb16eb09931a9bdc832f7d69eb51c0955b160c"
+    },
+    {
+      "count": 4,
+      "template_hash": "893801822f1b02a106312f5c811e66addb9fbe44f7f0a97f96c482347f264da7"
+    },
+    {
+      "count": 4,
+      "template_hash": "7fd0af0429740b8682c7b4e92d18d7b2beefb8098339476911d1099219693a4b"
+    },
+    {
+      "count": 4,
+      "template_hash": "a36db87e67f6e43ff50888356c06cdc7c0a80c0582ea3497a87987e5312d5117"
+    },
+    {
+      "count": 4,
+      "template_hash": "c72ced25bdc2b8c4ad0ea349675932494c55ce7eead3278004982b84cc2302d4"
+    },
+    {
+      "count": 4,
+      "template_hash": "ffb2ed6563c52e7fa5b6e91e21da5193634d74fb1867820346e0931fca7065c5"
+    },
+    {
+      "count": 4,
+      "template_hash": "b9a8283a33ff66485cc1166b3e33e367029ff0a0aa19fd7d0289172a8c503ab2"
+    },
+    {
+      "count": 4,
+      "template_hash": "61fa647bc0e7036bfea892221b17832a97e2368aad132b4d2b3c82ed3e03eaed"
+    },
+    {
+      "count": 4,
+      "template_hash": "19b07a05828e41195aed571415c53f19d1fa8bca4d9ee1fb5270fc2414710dbe"
+    },
+    {
+      "count": 4,
+      "template_hash": "0a725fb1282928cafcb5a91f2cef44537e64847824a3dc199f8cfde50edcb0c4"
+    },
+    {
+      "count": 4,
+      "template_hash": "080ac98959f7e3e0fcec3b261cd64ed2ec2d91983f3539830e1cd10c83850c09"
+    },
+    {
+      "count": 4,
+      "template_hash": "141799c25a6c97ebb40c579d1dbb35081dac9ca0ba595a7bd2e8d40bb0561cdd"
+    },
+    {
+      "count": 4,
+      "template_hash": "9020cadf965f194338efe0ca17fe00436237d955402d62fb20d585ce1d2d717c"
+    },
+    {
+      "count": 4,
+      "template_hash": "7635affb2d2105b3f0e857bc5f4a2ec58cf83b823822ab039910fc068ec4ff3a"
+    },
+    {
+      "count": 4,
+      "template_hash": "3c2cea14d1ddcce4bce40e636530c1742d557bc673fe714ced814a6a58391f9f"
+    },
+    {
+      "count": 4,
+      "template_hash": "16bb8b8d720cc7639d3af66db163b4b6d42010de8039087c0b4c96f15875f4f3"
+    },
+    {
+      "count": 4,
+      "template_hash": "72786b00d233c2f8d0262b22d985aea43a2b109100b01a3ae161f4023221ed8f"
+    },
+    {
+      "count": 4,
+      "template_hash": "7e31999f3bc1dc51e165862c34591c852fa53ddfc1efa5b1bfc707bc6a189982"
+    },
+    {
+      "count": 4,
+      "template_hash": "5656a28c756038605c7018351345a22180b83863cc7f9c10dcd2d2376a595e88"
+    },
+    {
+      "count": 4,
+      "template_hash": "83504f6c992cc630016be1ffcbe82f3169ec6f402e1b760da39e6178b4631a1c"
+    },
+    {
+      "count": 4,
+      "template_hash": "306f513341ee45775614de815fc12d4450e6027cde021ff0c05a61937ec29719"
+    },
+    {
+      "count": 4,
+      "template_hash": "d7e275650d2598f307cf201815926ba2bd2b117490135e4cd51c993de5b2d36b"
+    },
+    {
+      "count": 4,
+      "template_hash": "ea6aa1740acd0211bed57026cd07224add92de3580e92d7b0ea55d69f5ad441a"
+    },
+    {
+      "count": 4,
+      "template_hash": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+    },
+    {
+      "count": 4,
+      "template_hash": "806e91e1e2e9e271224c5c62cf4c95ca18296b16df8ee2bbd3dabeb9d35cdfcc"
+    },
+    {
+      "count": 4,
+      "template_hash": "bc621c66894336a6426eb6d09121e924653394c8f2153899a7aa4bafe910d46d"
+    },
+    {
+      "count": 3,
+      "template_hash": "a0f181c59b5355a20fc64417e33fe8a0b2ba6f0127ffdba75a83c052e1da7b4d"
+    },
+    {
+      "count": 3,
+      "template_hash": "7e1a82dc97fd289a75f1e48cc71a8bab6309b7885f74d181439148f51f608389"
+    },
+    {
+      "count": 3,
+      "template_hash": "dbf6928f45332b753b76560d8216356538dbed34f2a76095fe6251c97f03ca0c"
+    },
+    {
+      "count": 3,
+      "template_hash": "eabf2eb70084bd5cfaf457e30302145a7f6c427d3cc41767ea950e63d4c70db5"
+    },
+    {
+      "count": 3,
+      "template_hash": "40fdc600abef1abce757e9067be78fb185d8b8960c85022c244cdabc8a66b9cb"
+    },
+    {
+      "count": 3,
+      "template_hash": "3749bdca55ff5c3b1acb90b5325bea63b2d57a0d074c55f50f695c93f78eb677"
+    },
+    {
+      "count": 3,
+      "template_hash": "879f43fbcdae4b8907617095f58c96274302ad8080c27068bb2973d5b2202658"
+    },
+    {
+      "count": 3,
+      "template_hash": "780354f1e34c727a33ad15228e370e94a3b63b52badd30378a312e04e29e35df"
+    },
+    {
+      "count": 3,
+      "template_hash": "182ac8fefa3ce7ff6b6a935679ec3e5d27978b141819f0427888a95bfe1d2409"
+    },
+    {
+      "count": 3,
+      "template_hash": "2e188c58649a7cb03112f727888ffd83cb5bf5b4b2278a82116aaaf9c2b46e5a"
+    },
+    {
+      "count": 3,
+      "template_hash": "fb84d694a7f836102da9ea7f0b69d8bbe677dc4b9a2d4ec0205f097d2a77d911"
+    },
+    {
+      "count": 3,
+      "template_hash": "2adb2fb1f6add38fe390d34433efe8cdb19cbbcd091aaf1e8ab18b3d332ab7fe"
+    },
+    {
+      "count": 3,
+      "template_hash": "d169506ec6b8bf035cfea15958b5cd644a82d6773e6782608de2f52efced9090"
+    },
+    {
+      "count": 3,
+      "template_hash": "cae1ac5c61a577491520dc1a64a115bf0b67246e62c08a95a1e1900271996bc4"
+    },
+    {
+      "count": 3,
+      "template_hash": "52d9376b2642d21f6478c8c688f0a88c8b5ece76bc009da6840e0dc6673e99c2"
+    },
+    {
+      "count": 3,
+      "template_hash": "c6cc9b250d7a998a54dbb441b381f343d0e87fc2c9a0c62367c4effceaa9c15f"
+    },
+    {
+      "count": 3,
+      "template_hash": "1128ade8f7d2e5e889576038ce8015cea7b91e44b8c25b703b7999cb1e96659a"
+    },
+    {
+      "count": 3,
+      "template_hash": "c80fc2c004b896863ef8c0c66464111b2ce2c6f87800100c867ed935f79534f3"
+    },
+    {
+      "count": 3,
+      "template_hash": "2fdb652833eee2680ac936a0005a23563132d408b4a46527fe00c2077ac54c0b"
+    },
+    {
+      "count": 3,
+      "template_hash": "c83f873b950fcb4a14f9f3aebafac6ea24048e9a0d188a40c82d5b4598e499ae"
+    },
+    {
+      "count": 3,
+      "template_hash": "e1360f07f55d662c7b75061d9b01f23791e6c60cf681af4b408a9c89974c0692"
+    },
+    {
+      "count": 3,
+      "template_hash": "05985c20fa6bbb0e0e5dc2f0a0fcfaed256916d3fcd18c80b2014da720a351ec"
+    },
+    {
+      "count": 3,
+      "template_hash": "297bfcbf3bc2558bac6582ba1e8e683be8ddf46060df537669aa07163ca01366"
+    },
+    {
+      "count": 3,
+      "template_hash": "f03cb632f251958ad3ad97a4666460f05dafa5de22d8eb1acaa0ff62ea78351e"
+    },
+    {
+      "count": 3,
+      "template_hash": "cd88eb18745334ebf81ab8dc03c90dd9505282579e5216c17458ff731b346cde"
+    },
+    {
+      "count": 3,
+      "template_hash": "6a785af65e11ddd9843c620399bed2dde2ec6832c70e2dd5939dd47b0b0a4ced"
+    },
+    {
+      "count": 3,
+      "template_hash": "b70e0ea090390f30231967099867fbb864a612f42cb4807e883c4eec409744a0"
+    },
+    {
+      "count": 3,
+      "template_hash": "bb74a5952a6cdab55ab5bd2a4a6c27a1aef3f0ccdbdd291ef685ce648935ac56"
+    },
+    {
+      "count": 3,
+      "template_hash": "7e0cb7df400c1b833c8b7f04694d9bfb3ae70e5dff8d4a9d9e76e1819ec65d3c"
+    },
+    {
+      "count": 3,
+      "template_hash": "fbfecaa5f0f34b87dc8f97dddff69bcbbf768b3596f7ddf7fb3d6c1ed8005bf7"
+    },
+    {
+      "count": 3,
+      "template_hash": "507bb45405ede8b121be2d4b42273640ac5f839c6fb3d61451573986431c97e1"
+    },
+    {
+      "count": 3,
+      "template_hash": "3f6a56cc5e3dc55fd773cd09e32b134a5bc6a43feb162c05221585869488b3c2"
+    },
+    {
+      "count": 3,
+      "template_hash": "3dc56871e614decc0a2544527f0c2af262b89bfa814805eee071b4f7de064745"
+    },
+    {
+      "count": 3,
+      "template_hash": "541fa17ce50fc0f0e487252b4da32f538f45c5c117091fa8dd1826e03d20c096"
+    },
+    {
+      "count": 3,
+      "template_hash": "3ee30b9b9ddd61ac7fdc9239958004ea6a7d9c855310702522d10b1bf78259de"
+    },
+    {
+      "count": 3,
+      "template_hash": "dc2ba1e4b85b82f14d813d1576db830631cd1703597572b9390a96d9212c6a83"
+    },
+    {
+      "count": 3,
+      "template_hash": "2b8b6a0f35f8102cc8ac8eae5dd6b4b77bbcb2348d847e14326dac219ced72fe"
+    },
+    {
+      "count": 3,
+      "template_hash": "e965e32a8b887a54602604a7f2be88426242344d8cabcdb5cf3ab9cf97ff2400"
+    },
+    {
+      "count": 3,
+      "template_hash": "abeca0fffa0791de41c1b17c8c6292ad54df4706e5ab9875c21740ebbf066c48"
+    },
+    {
+      "count": 3,
+      "template_hash": "6962b943f28f643dc37c81e91d4aa683314e6abb29b0ed60047ad65b1203f177"
+    },
+    {
+      "count": 3,
+      "template_hash": "94bb74f26e9bb48a95eee9905c7f9ddf1642218bdd7e7dde8881d0fd44cdb668"
+    },
+    {
+      "count": 3,
+      "template_hash": "f61e63e45393bb37ee066dc02ae297fd71c576fd525a45ff31400060ef7868f5"
+    },
+    {
+      "count": 3,
+      "template_hash": "292ba20806af7b77a6cd6d564b721043d8b5e2eec4fdd5c5a309c3f40f42ddca"
+    },
+    {
+      "count": 3,
+      "template_hash": "dfc07c6990fcd4bc06019825369fd4ed52cfc45b6e0cf9d4292c6b3f77e9c75c"
+    },
+    {
+      "count": 3,
+      "template_hash": "fcbfd0ea8624c1eba7146d401675375e8c65bf6c22085415007235d262ee9ff6"
+    },
+    {
+      "count": 3,
+      "template_hash": "40f8aabd2b4b8540d0344f8293356f49c8eb0dc0afc78f8f0391db7a00d5ab1f"
+    },
+    {
+      "count": 3,
+      "template_hash": "3ee1982cdbf5cc21ed44a8974cf55b8e06210a7f0521d6ebed73bec49c2833ff"
+    },
+    {
+      "count": 3,
+      "template_hash": "57ce035fad2917dfaf833fe4a78fbf55c9d8b2a5351a059cf9795a43a07ebd57"
+    },
+    {
+      "count": 3,
+      "template_hash": "6aab3f6b0272aa5fe06f72920f84f830a45eb92b7d2e1caf35719333daf6d531"
+    }
+  ],
+  "repeated_template_groups": 876,
+  "repeated_template_rows": 1198,
+  "source_distribution": {
+    "csdmc2010": 4325,
+    "hebrew_eval": 200,
+    "spamassassin": 6035,
+    "uci_sms": 5574
+  },
+  "source_label_distribution": {
+    "csdmc2010": {
+      "HAM": 2949,
+      "SPAM": 1376
+    },
+    "hebrew_eval": {
+      "HAM": 100,
+      "SPAM": 100
+    },
+    "spamassassin": {
+      "HAM": 4153,
+      "SPAM": 1882
+    },
+    "uci_sms": {
+      "HAM": 4827,
+      "SPAM": 747
+    }
+  },
+  "source_summaries": [
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "public_corpus_sender_copyright_do_not_use_live_system",
+      "processed_path": "data\\processed\\spamassassin\\spamassassin.jsonl",
+      "rows": 6035,
+      "source_name": "spamassassin"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "conditional_underlying_competition_terms_need_review",
+      "processed_path": "data\\processed\\csdmc2010\\csdmc2010.jsonl",
+      "rows": 4325,
+      "source_name": "csdmc2010"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": false,
+        "training": true
+      },
+      "license_status": "CC_BY_4_0",
+      "processed_path": "data\\processed\\uci_sms\\uci_sms.jsonl",
+      "rows": 5574,
+      "source_name": "uci_sms"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": false,
+        "training": false
+      },
+      "license_status": "local_synthetic_manual_eval_only",
+      "processed_path": "data\\processed\\hebrew_eval\\hebrew_eval.jsonl",
+      "rows": 200,
+      "source_name": "hebrew_eval"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "public_record_privacy_review_required",
+      "processed_path": "data\\processed\\enron_manual\\enron_manual.jsonl",
+      "rows": 0,
+      "source_name": "enron_manual"
+    },
+    {
+      "allowed_use": {
+        "evaluation": false,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "agreement_required",
+      "processed_path": "data\\processed\\trec_manual\\trec_manual.jsonl",
+      "rows": 0,
+      "source_name": "trec_manual"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "terms_need_review",
+      "processed_path": "data\\processed\\dcinbox_manual\\dcinbox_manual.jsonl",
+      "rows": 0,
+      "source_name": "dcinbox_manual"
+    },
+    {
+      "allowed_use": {
+        "evaluation": false,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "LDC_license_required",
+      "processed_path": "data\\processed\\avocado_manual\\avocado_manual.jsonl",
+      "rows": 0,
+      "source_name": "avocado_manual"
+    },
+    {
+      "allowed_use": {
+        "evaluation": true,
+        "research_only": true,
+        "training": false
+      },
+      "license_status": "license_needs_review",
+      "processed_path": "data\\processed\\sms_phishing_manual\\sms_phishing_manual.jsonl",
+      "rows": 0,
+      "source_name": "sms_phishing_manual"
+    }
+  ],
+  "total_rows": 16134
+}

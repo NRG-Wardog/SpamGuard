@@ -1,0 +1,4 @@
+split,rows,labels,sources,languages,hard_ham,links,phones
+train,3612,"{""HAM"": 3163, ""SPAM"": 449}","{""uci_sms"": 3612}","{""english_or_latin"": 3610, ""multilingual_or_other"": 2}",2545,70,279
+validation,770,"{""HAM"": 677, ""SPAM"": 93}","{""uci_sms"": 770}","{""english_or_latin"": 770}",538,10,49
+test,777,"{""HAM"": 677, ""SPAM"": 100}","{""uci_sms"": 777}","{""english_or_latin"": 776, ""multilingual_or_other"": 1}",543,14,60
