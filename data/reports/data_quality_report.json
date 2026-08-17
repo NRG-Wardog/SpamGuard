@@ -1,4 +1,7 @@
 {
+  "conflicting_label_examples": [],
+  "conflicting_label_groups": 0,
+  "conflicting_label_rows": 0,
   "duplicate_examples": [
     {
       "duplicate_row": 317,
@@ -1194,8 +1197,8 @@
     {
       "allowed_use": {
         "evaluation": true,
-        "research_only": false,
-        "training": true
+        "research_only": true,
+        "training": false
       },
       "license_status": "public_corpus_sender_copyright_do_not_use_live_system",
       "processed_path": "data\\processed\\spamassassin\\spamassassin.jsonl",

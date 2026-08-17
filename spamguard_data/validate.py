@@ -64,6 +64,21 @@ def validate_rows(rows: list[dict[str, Any]], source_summaries: list[dict[str, A
     templates = [template_hash(row.get("text", "")) for row in rows]
     hash_counts = Counter(hashes)
     template_counts = Counter(templates)
+    labels_by_hash: dict[str, set[str]] = defaultdict(set)
+    sources_by_hash: dict[str, set[str]] = defaultdict(set)
+    for row, row_hash in zip(rows, hashes):
+        labels_by_hash[row_hash].add(str(row.get("label")))
+        sources_by_hash[row_hash].add(str(row.get("source", "UNKNOWN")))
+    conflicts = [
+        {
+            "text_hash": row_hash,
+            "labels": sorted(labels),
+            "sources": sorted(sources_by_hash[row_hash]),
+            "row_count": hash_counts[row_hash],
+        }
+        for row_hash, labels in sorted(labels_by_hash.items())
+        if len(labels) > 1
+    ]
 
     invalid_rows = []
     for idx, row in enumerate(rows):
@@ -117,6 +132,9 @@ def validate_rows(rows: list[dict[str, Any]], source_summaries: list[dict[str, A
         "invalid_or_unknown_label_count": len(invalid_rows),
         "exact_duplicate_rows": sum(c - 1 for c in hash_counts.values() if c > 1),
         "exact_duplicate_groups": sum(1 for c in hash_counts.values() if c > 1),
+        "conflicting_label_groups": len(conflicts),
+        "conflicting_label_rows": sum(item["row_count"] for item in conflicts),
+        "conflicting_label_examples": conflicts[:100],
         "repeated_template_rows": sum(c - 1 for c in template_counts.values() if c > 1),
         "repeated_template_groups": sum(1 for c in template_counts.values() if c > 1),
         "link_coverage": {
@@ -153,6 +171,7 @@ def main() -> None:
         fh.write(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
     write_csv(REPORT_DIR / "source_summaries.csv", source_summaries)
     write_csv(REPORT_DIR / "duplicate_examples.csv", report["duplicate_examples"])
+    write_csv(REPORT_DIR / "conflicting_label_examples.csv", report["conflicting_label_examples"])
     write_csv(REPORT_DIR / "invalid_row_examples.csv", report["invalid_row_examples"])
     print(json.dumps({"report": str(REPORT_DIR / "data_quality_report.json"), "total_rows": report["total_rows"]}, indent=2))
 

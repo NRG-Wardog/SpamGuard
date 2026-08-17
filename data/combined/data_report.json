@@ -17,6 +17,9 @@
   },
   "do_not_train_yet": true,
   "evaluation_candidate_inputs": {
+    "conflicting_label_examples": [],
+    "conflicting_label_groups": 0,
+    "conflicting_label_rows_excluded": 0,
     "input_rows": 16134,
     "removed_exact_duplicates": 999,
     "repeated_template_clusters": 152,
@@ -41,6 +44,23 @@
       "hebrew_eval": 200
     }
   },
+  "leakage_check": {
+    "pairwise": {
+      "train_vs_test": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      },
+      "train_vs_validation": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      },
+      "validation_vs_test": {
+        "exact_text_overlap": 0,
+        "template_overlap": 0
+      }
+    },
+    "passed": true
+  },
   "recommendation": "Review manifest/license flags and quality report before enabling any conditional source for training.",
   "skipped_evaluation_sources": [
     {
@@ -53,6 +73,10 @@
     }
   ],
   "skipped_training_sources": [
+    {
+      "reason": "allow_training_false",
+      "source_name": "spamassassin"
+    },
     {
       "reason": "allow_training_false",
       "source_name": "csdmc2010"
@@ -83,67 +107,68 @@
     }
   ],
   "split_policy": "Exact duplicate removal, then template-hash clusters split as whole clusters. Synthetic Hebrew remains separate evaluation-only.",
+  "split_seed": 20260619,
   "split_summary": {
     "test": {
-      "hard_ham": 1098,
+      "hard_ham": 543,
       "labels": {
-        "HAM": 1290,
-        "SPAM": 347
+        "HAM": 677,
+        "SPAM": 100
       },
       "languages": {
-        "english_or_latin": 1637
+        "english_or_latin": 776,
+        "multilingual_or_other": 1
       },
-      "links": 677,
-      "phones": 405,
-      "rows": 1637,
+      "links": 14,
+      "phones": 60,
+      "rows": 777,
       "sources": {
-        "spamassassin": 863,
-        "uci_sms": 774
+        "uci_sms": 777
       }
     },
     "train": {
-      "hard_ham": 5236,
+      "hard_ham": 2545,
       "labels": {
-        "HAM": 6046,
-        "SPAM": 1600
+        "HAM": 3163,
+        "SPAM": 449
       },
       "languages": {
-        "english_or_latin": 7644,
+        "english_or_latin": 3610,
         "multilingual_or_other": 2
       },
-      "links": 3206,
-      "phones": 1855,
-      "rows": 7646,
+      "links": 70,
+      "phones": 279,
+      "rows": 3612,
       "sources": {
-        "spamassassin": 4037,
-        "uci_sms": 3609
+        "uci_sms": 3612
       }
     },
     "validation": {
-      "hard_ham": 1130,
+      "hard_ham": 538,
       "labels": {
-        "HAM": 1295,
-        "SPAM": 347
+        "HAM": 677,
+        "SPAM": 93
       },
       "languages": {
-        "english_or_latin": 1639,
-        "multilingual_or_other": 3
+        "english_or_latin": 770
       },
-      "links": 672,
-      "phones": 379,
-      "rows": 1642,
+      "links": 10,
+      "phones": 49,
+      "rows": 770,
       "sources": {
-        "spamassassin": 866,
-        "uci_sms": 776
+        "uci_sms": 770
       }
     }
   },
   "training_candidate_inputs": {
-    "input_rows": 11609,
-    "removed_exact_duplicates": 684,
-    "repeated_template_clusters": 110,
-    "rows_after_exact_dedup": 10925,
-    "rows_in_repeated_template_clusters": 262,
-    "template_clusters": 10773
+    "conflicting_label_examples": [],
+    "conflicting_label_groups": 0,
+    "conflicting_label_rows_excluded": 0,
+    "input_rows": 5574,
+    "removed_exact_duplicates": 415,
+    "repeated_template_clusters": 16,
+    "rows_after_exact_dedup": 5159,
+    "rows_in_repeated_template_clusters": 37,
+    "template_clusters": 5138
   }
 }

@@ -4,8 +4,8 @@
     {
       "allowed_use": {
         "evaluation": true,
-        "research_only": false,
-        "training": true
+        "research_only": true,
+        "training": false
       },
       "dedup_status": "not_deduplicated",
       "display_name": "SpamAssassin Public Corpus",
@@ -25,7 +25,7 @@
       },
       "license_status": "public_corpus_sender_copyright_do_not_use_live_system",
       "local_raw_path": "data\\raw\\spamassassin",
-      "notes": "Hard-ham is especially useful for false-positive reduction. Do not inject these messages into live email systems.",
+      "notes": "Hard-ham is useful for evaluation, but training remains disabled pending sender-copyright review. Do not inject these messages into live email systems.",
       "parser_name": "spamassassin_email_dirs",
       "processed_path": "data\\processed\\spamassassin\\spamassassin.jsonl",
       "sample_counts": {

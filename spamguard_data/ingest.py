@@ -38,10 +38,10 @@ SOURCE_METADATA: dict[str, dict[str, Any]] = {
         "download_method": "Local archives already present; public Apache mirror supports direct archive download.",
         "parser_name": "spamassassin_email_dirs",
         "license_status": "public_corpus_sender_copyright_do_not_use_live_system",
-        "allowed_use": {"training": True, "evaluation": True, "research_only": False},
+        "allowed_use": {"training": False, "evaluation": True, "research_only": True},
         "label_mapping": {"easy_ham": "HAM", "easy_ham_2": "HAM", "hard_ham": "HAM", "spam": "SPAM", "spam_2": "SPAM"},
         "known_risks": ["old data", "sender copyright ambiguity", "newsletter/list bias", "template duplicates"],
-        "notes": "Hard-ham is especially useful for false-positive reduction. Do not inject these messages into live email systems.",
+        "notes": "Hard-ham is useful for evaluation, but training remains disabled pending sender-copyright review. Do not inject these messages into live email systems.",
     },
     "csdmc2010": {
         "source_name": "csdmc2010",
@@ -279,7 +279,7 @@ def process_spamassassin() -> dict[str, Any]:
     rows = email_records_from_folder(
         root,
         source="spamassassin",
-        allow_training=True,
+        allow_training=bool(meta["allowed_use"]["training"]),
         allow_evaluation=True,
         license_status=meta["license_status"],
     )

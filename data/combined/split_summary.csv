@@ -1,4 +1,4 @@
 split,rows,labels,sources,languages,hard_ham,links,phones
-train,7646,"{""HAM"": 6046, ""SPAM"": 1600}","{""spamassassin"": 4037, ""uci_sms"": 3609}","{""english_or_latin"": 7644, ""multilingual_or_other"": 2}",5236,3206,1855
-validation,1642,"{""HAM"": 1295, ""SPAM"": 347}","{""spamassassin"": 866, ""uci_sms"": 776}","{""english_or_latin"": 1639, ""multilingual_or_other"": 3}",1130,672,379
-test,1637,"{""HAM"": 1290, ""SPAM"": 347}","{""spamassassin"": 863, ""uci_sms"": 774}","{""english_or_latin"": 1637}",1098,677,405
+train,3612,"{""HAM"": 3163, ""SPAM"": 449}","{""uci_sms"": 3612}","{""english_or_latin"": 3610, ""multilingual_or_other"": 2}",2545,70,279
+validation,770,"{""HAM"": 677, ""SPAM"": 93}","{""uci_sms"": 770}","{""english_or_latin"": 770}",538,10,49
+test,777,"{""HAM"": 677, ""SPAM"": 100}","{""uci_sms"": 777}","{""english_or_latin"": 776, ""multilingual_or_other"": 1}",543,14,60

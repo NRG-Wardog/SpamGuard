@@ -14,7 +14,7 @@ This branch adds a non-training dataset acquisition and ingestion layer for Spam
 
 | Source | Parser | Current status | Default use |
 |---|---|---|---|
-| SpamAssassin Public Corpus | raw email folders | local archives processed | training + evaluation |
+| SpamAssassin Public Corpus | raw email folders | local archives processed | evaluation/research only pending sender-copyright review |
 | UCI SMS Spam Collection | TSV SMS file | auto-downloaded | auxiliary training + evaluation |
 | CSDMC2010 | raw email folders | local ZIPs processed | evaluation/research only pending terms review |
 | Hebrew synthetic/manual probe | CSV | generated locally, not committed | evaluation only |
@@ -44,14 +44,14 @@ Each folder contains a README with expected formats and source-specific notes.
 
 ## Training Eligibility
 
-Currently safe to consider later, after final review:
+Currently training-enabled:
 
-- SpamAssassin Public Corpus: useful for hard-HAM; public corpus but sender copyright caution remains.
 - UCI SMS Spam Collection: CC BY 4.0; use as auxiliary short-message data, not primary email data.
 
 Evaluation/research only by default:
 
 - CSDMC2010: underlying competition terms still need review.
+- SpamAssassin Public Corpus: useful for hard-HAM evaluation, but sender-copyright ambiguity requires review before training.
 - Hebrew synthetic/manual probe: synthetic, evaluation-only, `allow_training=False`; generated rows are kept local and ignored.
 - Enron / Enron-Spam: privacy/license review required.
 - DCinbox: usage terms need review.
@@ -97,7 +97,7 @@ Outputs:
 - `data/reports/duplicate_examples.csv`
 - `data/reports/invalid_row_examples.csv`
 
-Checks include missing text, invalid labels, exact duplicates, repeated template fingerprints, language distribution, HAM/SPAM balance, hard-HAM heuristics, link/phone coverage, and extreme lengths.
+Checks include missing text, invalid labels, conflicting labels for identical normalized text, exact duplicates, repeated template fingerprints, language distribution, HAM/SPAM balance, hard-HAM heuristics, link/phone coverage, and extreme lengths.
 
 ## How To Build The Combined Dataset
 
@@ -114,7 +114,7 @@ Outputs:
 - `data/combined/auxiliary_evaluation_only.csv`
 - `data/combined/data_report.json`
 
-The builder respects source-level and row-level `allow_training` / `allow_evaluation` flags, removes exact duplicates, clusters by normalized template hash, and splits by cluster rather than by row.
+The builder respects source-level and row-level `allow_training` / `allow_evaluation` flags, excludes and reports every exact-text group with conflicting labels, removes same-label duplicates, clusters by normalized template hash, and splits by cluster rather than by row. It fails the build if exact text or a template cluster leaks across train, validation, or test.
 
 ## Current Quality Snapshot
 
