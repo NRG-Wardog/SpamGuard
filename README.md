@@ -24,7 +24,7 @@ The same run records evaluation throughput of roughly **192 samples/second** on 
 
 These values are evidence from a specific recorded experiment, **not a claim of universal real-world accuracy**. The repository now uses stricter dataset-governance and leakage-control machinery than the original notebook workflow, so future comparisons should be tied to a reproducible governed split.
 
-See [`docs/RESULTS.md`](docs/RESULTS.md) for metric provenance, runtime details, and interpretation.
+See [`docs/RESULTS.md`](docs/RESULTS.md) for metric provenance and [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md) for intended use, evaluation boundaries, and limitations.
 
 ---
 
