@@ -5,9 +5,26 @@
 
 **NLP email classification with governed data ingestion, leakage-resistant evaluation, and usable inference tooling.**
 
-SpamGuard is an end-to-end machine-learning engineering project for classifying email as legitimate mail, spam, or phishing-oriented content. The project started as a model-training notebook and evolved into a broader system covering **dataset provenance, policy-aware ingestion, normalization, quality validation, deduplication, template clustering, reproducible splitting, model evaluation, `.eml` inference, Gmail integration, and a Streamlit review interface**.
+SpamGuard is an end-to-end machine-learning engineering project for classifying email as legitimate mail, spam, or phishing-oriented content. It started as a model-training notebook and evolved into a broader system covering **dataset provenance, policy-aware ingestion, normalization, quality validation, deduplication, template clustering, reproducible splitting, model evaluation, `.eml` inference, Gmail integration, and a Streamlit review interface**.
 
-The main engineering goal is not simply to train a classifier. It is to make the path from raw data to evaluation and inference **auditable, reproducible, and resistant to common data-quality and leakage problems**.
+The engineering goal is not simply to train a classifier. It is to make the path from raw data to evaluation and inference **auditable, reproducible, and resistant to common data-quality and leakage problems**.
+
+---
+
+## Recorded Evaluation Evidence
+
+A completed Transformer run preserved in the committed notebook records the following final metrics:
+
+| Split | Accuracy | Precision | Recall | F1 | ROC AUC |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Validation | 99.32% | 99.45% | 99.02% | 99.23% | 99.97% |
+| Test | 99.33% | 99.51% | 98.98% | 99.24% | 99.97% |
+
+The same run records evaluation throughput of roughly **192 samples/second** on its test pass.
+
+These values are evidence from a specific recorded experiment, **not a claim of universal real-world accuracy**. The repository now uses stricter dataset-governance and leakage-control machinery than the original notebook workflow, so future comparisons should be tied to a reproducible governed split.
+
+See [`docs/RESULTS.md`](docs/RESULTS.md) for metric provenance, runtime details, and interpretation.
 
 ---
 
@@ -43,16 +60,7 @@ Each source can carry provenance and usage metadata such as source name, license
 
 ### Data-quality validation
 
-`spamguard_data/validate.py` produces structured quality reports covering:
-
-- source, language, and label distribution;
-- missing or invalid rows;
-- exact duplicate groups;
-- conflicting labels for identical text;
-- repeated normalized templates;
-- link and phone-number coverage;
-- extreme message-length cases;
-- source-level policy metadata.
+`spamguard_data/validate.py` produces structured quality reports covering source, language and label distribution, missing/invalid rows, exact duplicate groups, conflicting labels, repeated normalized templates, link/phone coverage, extreme message lengths, and source-level policy metadata.
 
 ### Leakage-resistant dataset construction
 
@@ -68,16 +76,11 @@ The split builder fails instead of silently continuing when leakage is detected.
 
 ### Reproducible testing
 
-The repository includes deterministic tests for ingestion, manifest round-tripping, deduplication, conflicting-label handling, template clustering, reproducible splitting, and leakage detection.
+The repository includes deterministic tests for ingestion, manifest round-tripping, deduplication, conflicting-label handling, template clustering, reproducible splitting, and leakage detection. GitHub Actions runs the fast engineering suite on Python 3.10, 3.11, and 3.12.
 
 ### Inference and integration
 
-The trained model can be used through:
-
-- raw `.eml` parsing and classification;
-- folder/batch classification;
-- Gmail OAuth import in **read-only** mode;
-- a Streamlit interface for reviewing imported/local messages and classification results.
+The trained model can be used through raw `.eml` parsing, folder/batch classification, Gmail OAuth import in **read-only** mode, and a Streamlit interface for reviewing local/imported messages and predictions.
 
 ---
 
@@ -87,10 +90,9 @@ The trained model can be used through:
 SpamGuard/
 ├── spamguard_data/          # governed ingestion, validation, dedup and split pipeline
 ├── spamguard_demo/          # reusable .eml, Gmail and inference helpers
-├── tests/                   # deterministic pipeline/integration-oriented tests
-├── test/                    # sample/local mail fixtures and runtime folders
-├── docs/                    # project notes, dossier and result images
-├── data/                    # local datasets and generated reports (raw corpora not redistributed)
+├── tests/                   # deterministic pipeline tests
+├── docs/                    # engineering notes, results and images
+├── data/                    # local/generated data artifacts; raw corpora are not redistributed
 ├── streamlit_app.py         # review/demo application
 ├── SpamGuard_Transformer_Email_Spam_Classifier.ipynb
 ├── requirements-demo.txt
@@ -101,19 +103,15 @@ SpamGuard/
 
 ## Run the Fast Engineering Tests
 
-The governance/data tests use only the Python standard library and repository code:
-
 ```bash
 python -m unittest tests.test_data_pipeline -v
 ```
-
-GitHub Actions runs these tests on supported Python versions for every pull request and push to `main`.
 
 Model-dependent tests are kept separate because they require trained artifacts and heavier ML dependencies.
 
 ---
 
-## Build Clean Dataset Splits
+## Build Governed Dataset Splits
 
 After configuring and ingesting approved sources:
 
@@ -122,7 +120,7 @@ python -m spamguard_data.validate
 python -m spamguard_data.build_combined --seed 20260619
 ```
 
-Generated reports and split files are written under the repository's data/report directories. Review source licensing and allowed-use flags before enabling a source for training.
+Review source licensing and allowed-use flags before enabling a source for training.
 
 ---
 
@@ -134,29 +132,18 @@ The original training workflow remains available in:
 SpamGuard_Transformer_Email_Spam_Classifier.ipynb
 ```
 
-It covers environment setup, tokenization, transformer training, evaluation, artifact saving, and `.eml` inference. The model implementation is intentionally treated as one layer of the system rather than the entire project.
-
-Typical evaluation includes precision, recall, F1, confusion matrices, and optional ROC/PR analysis.
+It covers environment setup, tokenization, Transformer training, evaluation, artifact saving, and `.eml` inference. The model is intentionally treated as one layer of the system rather than the entire project.
 
 ---
 
 ## Demo and Gmail Integration
 
-Install demo dependencies:
-
 ```bash
 pip install -r requirements-demo.txt
-```
-
-Run:
-
-```bash
 streamlit run streamlit_app.py
 ```
 
 Gmail integration uses OAuth with the read-only Gmail scope. Imported messages are stored as local `.eml` snapshots for classification; the application does not delete, move, label, or modify Gmail messages.
-
-The demo expects trained model artifacts to be available locally.
 
 ---
 
@@ -172,12 +159,12 @@ The demo expects trained model artifacts to be available locally.
 
 ---
 
-## Design Principles
+## Engineering Principles
 
 - **Evidence over a single headline metric**: inspect class-level behavior and failure modes.
 - **Data policy is executable**: source permissions travel with the data pipeline.
 - **Reproducibility matters**: deterministic splits and explicit seeds are part of the evaluation contract.
-- **Leakage is a test failure**: repeated templates are treated as a real evaluation risk, not just exact duplicate text.
+- **Leakage is a test failure**: repeated templates are treated as an evaluation risk, not only exact duplicates.
 - **Model code is not the whole system**: ingestion, validation, integration and inference receive first-class engineering treatment.
 
 ---
@@ -187,14 +174,14 @@ The demo expects trained model artifacts to be available locally.
 - Email classification is sensitive to dataset and temporal distribution shift.
 - Template hashing is a pragmatic leakage-control mechanism, not a complete semantic near-duplicate detector.
 - The public repository does not redistribute third-party raw corpora.
-- Gmail support is intentionally a read-only demo/inference integration rather than an MTA or enterprise mail-gateway deployment.
+- Gmail support is a read-only inference/demo integration rather than an enterprise mail-gateway deployment.
 - Production deployment would require additional privacy controls, monitoring, adversarial evaluation, lifecycle management, and retraining policy.
 
 ---
 
-## Data and Privacy Policy
+## Data and Privacy
 
-Raw third-party corpora are not redistributed by this repository. Users are responsible for obtaining datasets under their applicable licenses and terms and for handling real email data according to appropriate privacy and organizational policy.
+Raw third-party corpora are not redistributed. Users are responsible for obtaining datasets under applicable licenses/terms and for handling real email data according to appropriate privacy and organizational policy.
 
 Do not process real user mail without authorization.
 
