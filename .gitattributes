@@ -1,2 +1,5 @@
 *.ckpt filter=lfs diff=lfs merge=lfs -text
 *.model filter=lfs diff=lfs merge=lfs -text
+
+# The notebook is an experiment artifact; reusable project code lives in Python modules.
+*.ipynb linguist-documentation
